@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bug Splat</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Nosifer' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<header>
+		<h1>Bug Splat</h1>
+	</header>
+	<div id="audioDiv">
+		<audio id="demo" src="sounds/CARTOONY.wav" autoplay loop>
+			<p>Your browser does not support the audio element </p>
+		</audio>
+	</div>
+
+	<script src="js/resources.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/engine.js"></script>
+
+	<!-- TODO - Move these controls into the engine.js script -->
+	<div id="audioControls">
+		<button onclick="document.getElementById('demo').play()">I love repetitive music</button>
+		<button onclick="document.getElementById('demo').pause()">Stop that annoying racket</button>
+		<button onclick="document.getElementById('demo').volume+=0.1">Whassat?  I can't hear</button>
+		<button onclick="document.getElementById('demo').volume-=0.1">Shh!  Quiet please</button>
+	</div>
+</body>
+</html>
